@@ -28,22 +28,27 @@ function selecaoFiat() {
     alert('Olá, você selecionou o Fiat.')
 }
 
-function resetarCoresDeFundoPadrao(){
+function resetarCoresDeFundoPadrao() {
     cardFiat.classList.add('padrao')
     cardFerrari.classList.add('padrao')
     cardJeep.classList.add('padrao')
     cardRam.classList.add('padrao')
 }
 
-function alteraCardAtivo(botaoClicado){
+function alteraCardAtivo(botaoClicado) {
+    const todosOsCardsAtivos = document.getElementsByClassName('ativo')
+    console.log('Quantidade de ativos: ', todosOsCardsAtivos.length)
+    for(let index = 0; index < todosOsCardsAtivos.length; index++){
+        todosOsCardsAtivos[index].classList.remove('ativo')
+    }
     const cardClicado = document.getElementById(botaoClicado)
     cardClicado.classList.remove('padrao')
     cardClicado.classList.toggle('ativo')
-    
+
     // if(estaAtivo){
     //     return cardClicado.classList.remove('ativo')
     // }
-    
+
     // // console.log('cardClicado', cardClicado.classList['value'])
     // // console.log('cardClicado', cardClicado)
     // cardClicado.classList.add('ativo')
@@ -78,4 +83,3 @@ cardRam.addEventListener('click', () => {
     alteraCardAtivo('ram')
     // cardRam.style.backgroundColor = 'red'
 })
-
