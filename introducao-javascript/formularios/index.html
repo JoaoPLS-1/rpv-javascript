@@ -11,40 +11,23 @@
 <body>
 
     <main>
-        <div class="formulario">
-            <div class="caixaform">
+        <h1>Formulário HTML - Tela de Login</h1>
+        <form action="#" method="POST" id="form-login">
+            <div class="input-wrapper">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Digite o seu usuário">
 
-                <h1>Formulário HTML - Tela de Login</h1>
-                <form action="#" method="POST" id="form-login">
-                    <div class="userpass">
-                        <div class="user">
-
-                            <label for="username">
-                                Username
-                            </label>
-                            <input type="text" name="username" id="username" placeholder="Digite o seu usuário">
-                        </div>
-                        <div class="pass">
-
-                            <label for="password">
-                                Password
-                            </label>
-                            <input type="password" name="password" id="password" placeholder="Digite sua senha">
-                        </div>
-                    </div>
-                    <div class="botaoli">
-
-                        <button>Enviar</button>
-                        <button type="reset">Limpar</button>
-
-
-                    </div>
-
-                </form>
             </div>
-        </div>
+            <div class="input-wrapper">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <div class="button-wrapper">
+                <button id="btn-submit">Enviar</button>
+                <button id="btn-reset" type="reset">Limpar</button>
+            </div>
+        </form>
     </main>
-
     <script src="script.js"></script>
 </body>
 
