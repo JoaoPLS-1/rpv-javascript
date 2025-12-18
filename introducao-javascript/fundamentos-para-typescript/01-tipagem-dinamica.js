@@ -1,3 +1,11 @@
+// const alunosHabilitados = ['Daniel', 'Tarcisio', 'Helena', 'Nicoly']
+// const alunosPrimeiroPeriodo = ['Daniel', 'Hugo']
+
+// const validacao = alunosPrimeiroPeriodo.map(aluno => {
+//     const estaHabilitado = alunosHabilitados.includes(aluno)
+//     console.log(`O aluno ${aluno}, está habilitado ?`, estaHabilitado)
+// })
+// return;
 // ===========================================
 // MÓDULO 01: TIPAGEM DINÂMICA E TIPOS PRIMITIVOS
 // ===========================================
@@ -13,6 +21,33 @@
     Ao final, você vai entender por que desenvolvedores do mundo
     inteiro adotaram o TypeScript para evitar bugs relacionados a tipos.
 */
+
+// // const json = [ {"nome": "Daniel"}, {"nome": "Hugo"}]
+// // console.log('json', json)
+
+// const alunosDaSala = [
+//     {
+//         nome: "Hugo"
+//     },
+//     {
+//         nome: "Jessica"
+//     },
+//     {
+//         nome: "Guilherme"
+//     }
+// ] 
+
+// const retornoDaApi = {
+//     nome: 'Daniel',
+//     // idade: 34,
+//     cidade: 'Cataguases'
+// }
+
+// const teste = 'daniel'
+// console.log('tipo alunosDaSala é um array ?', Array.isArray(retornoDaApi))
+// console.log(`O usuário logado é: ${retornoDaApi.nome}, que tem ${retornoDaApi.idade ?? 0} anos e mora em ${retornoDaApi.cidade}`)
+// console.log('alunos da sala', alunosDaSala[0].name ?? alunosDaSala[0].name2)
+// return;
 
 console.log('🚀 MÓDULO 01: TIPAGEM DINÂMICA E TIPOS PRIMITIVOS\n');
 
