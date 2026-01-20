@@ -1,10 +1,33 @@
 // Desestruturação
 
+<<<<<<< HEAD
 const arrayDeFrutas = ['maçã', 'banana', 'morango']
+=======
+const usuario = {
+    nome: 'Joao',
+    idade: 17,
+    cidade: 'Cataguases',
+}
+const cliente = {
+    nome: 'Cleiton',
+    idade: 92,
+    cidade: 'Londes',
+}
+const arrayDeFrutas = ['maçã', 'banana', 'morango']
+console.log(arrayDeFrutas)
+>>>>>>> 4f4ea2f (Atualizado 2026?)
 const frutaMaca = arrayDeFrutas[0]
 
 const [fruta1, fruta2, fruta3] = arrayDeFrutas
 
+<<<<<<< HEAD
+=======
+const { nome, idade, cidade} = usuario
+const { nomeCliente, idadeCliente, cidadeCliente} = cliente
+
+console.log(nome)
+
+>>>>>>> 4f4ea2f (Atualizado 2026?)
 // console.log(fruta1)
 
 // const varA = ['A']
