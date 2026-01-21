@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card{
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.card:first-child > span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.card:hover{
+    background-color: #c2c2c2;
+}
+.grid{
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    grid-template-columns: 100px 100px 100px  100px;
+    gap: 10px;
+    text-align: center;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
