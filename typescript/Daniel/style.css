@@ -27,14 +27,11 @@ body {
 .inputWrapper {
     display: flex;
     gap: 8px;
-
-    button {
-        max-height: 20px;
-    }
+    margin-bottom: 20px;
 }
 
 .input {
-    min-height: 100px;
+    
     position: relative;
 
     span {
@@ -44,4 +41,13 @@ body {
         top: 20px;
         left: 0;
     }
+}
+
+.concluida {
+    text-decoration: line-through;
+    color: #c2c2c2;
+}
+
+li {
+    cursor: pointer;
 }

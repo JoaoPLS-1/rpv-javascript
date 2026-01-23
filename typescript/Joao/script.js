@@ -9,23 +9,24 @@ const itemLista = document.createElement("li")
 
 // lista.appendChild(itemLista)
 
-let listaDeTarefas = []
+// let listaDeTarefas = [] nao é preciso um array usando o metodo que está em funcionamento
 
 button.addEventListener('click', () => {
-    const tarefa = input.value.trim();
+    const tarefa = input.value.trim(); //Tarefa recebendo o valor(conteúdo) do imput
     if (tarefa.length === 0) {
         inputError.textContent = 'Campo obrigatório.'
         return;
-    } else if (tarefa.length < 3) {
+    }
+    if (tarefa.length < 3) {
         inputError.textContent = 'Mínimo de 3 caracteres.'
         return;
-    } else {
-        const item = document.createElement('li')
-        item.textContent = tarefa
+    }  // Fazendo validação para o scan criar imput erro
+        const item = document.createElement('li') //Coloca o item para criar o li que gera a lista
+        item.textContent = tarefa //Faz com que o elemento criado receba o conteudo do imput que a tarefa está recebendo
         lista.appendChild(item)
-
-        input.value = ""
-    }
+        inputError.textContent = '' //Limpando o valor do span de erro após passar condição do if
+        input.value = "" //Limpando o valor do imput
+    
     
     // const item = document.createElement('li')
     // item.textContent = tarefa
@@ -41,5 +42,6 @@ button.addEventListener('click', () => {
     //     // lista.appendChild(item)
 
     // });
+    
 
 })
